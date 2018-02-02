@@ -2,7 +2,7 @@
 
 CDN repository of my code
 
-- `ajax,js` cdn
+- `ajax.js`
 
   For production:
 
