@@ -1,17 +1,18 @@
 # cdn-repo
 
-CDN repository of my code
+This is a CDN repository of my code, which is hosting in [RawGitHack](http://raw.githack.com/).
+<!-- ([RawGit](https://rawgit.com/)) -->
 
 - `ajax.js`
 
   For production:
 
   ```js
-  <srcipt src="https://cdn.rawgit.com/tatwd/cdn-repo/8bb129b7/ajax.js" async></script>
+  <srcipt src="https://rawcdn.githack.com/tatwd/cdn-repo/master/ajax.js"></script>
   ```
 
   For development:
 
   ``` js
-  <srcipt src="https://rawgit.com/tatwd/cdn-repo/master/ajax.js" async></script>
+  <srcipt src="https://raw.githack.com/tatwd/cdn-repo/master/ajax.js"></script>
   ```
