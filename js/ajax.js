@@ -23,8 +23,8 @@ const ajax = function (url, settings = {}) {
 
         getJson() {
             let __data = typeof this._data === 'object'
-            ? this._data
-            : JSON.parse(this._data);
+                ? this._data
+                : JSON.parse(this._data);
             
             return __data === null
                 ? __data
@@ -52,7 +52,7 @@ const ajax = function (url, settings = {}) {
 
         // set request header
         for (let item in header) {
-            xhr.setRequestHeader(item, `application/${header[item]}`);
+            xhr.setRequestHeader(item, header[item]);
         }
 
         xhr.send(data);
