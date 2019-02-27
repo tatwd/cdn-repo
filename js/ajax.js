@@ -31,14 +31,10 @@ const ajax = function(url, settings = {}) {
 
     // json fmt
     getJson() {
-      let __data = typeof this._data === 'object' 
-        ? this._data 
-        : JSON.parse(this._data);
-      return __data === null
-        ? __data
-        : (__data.d && __data.d !== ''
-        ? JSON.parse(__data.d)
-        : __data);
+      let __data =
+        typeof this._data === 'object' ? this._data : JSON.parse(this._data);
+      if (__data === null) return __data;
+      return __data.d && __data.d !== '' ? JSON.parse(__data.d) : __data;
     }
 
     // other format methods here
